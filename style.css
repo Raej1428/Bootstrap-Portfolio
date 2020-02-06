@@ -1,0 +1,10 @@
+.img2 {
+    width: 325px;
+    height: 475px;
+}
+
+html {
+    background-image: url("images/pixel-heart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
