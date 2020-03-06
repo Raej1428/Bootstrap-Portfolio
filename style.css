@@ -1,17 +1,18 @@
 .img2 {
-    height: 348px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: auto
+  height: 348px;
+  width: auto;
+  border-color: darkslateblue ;
+  border-width: 5px;
+  border-style: solid;
 }
 
 html {
-    background-image: url("images/pixel-heart.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/pixel-heart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container {
-    
-
+.aboutMe {
+    background-color: rgba(220, 220, 220, 0.534);
+  padding: 15px;
 }
