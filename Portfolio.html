@@ -22,45 +22,37 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://raej1428.github.io/Bootstrap-Portfolio/Index.html">About <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="https://raej1428.github.io/Bootstrap-Portfolio/Portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://raej1428.github.io/Bootstrap-Portfolio/Contact.html">Contact</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <hr>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="https://raej1428.github.io/Bootstrap-Portfolio/Index.html" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="https://raej1428.github.io/Bootstrap-Portfolio/Portfolio.html" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="https://raej1428.github.io/Bootstrap-Portfolio/Contact.html" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+
+   
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/Hangman.jpg" class="card-img-top" alt="Hangman Game">
+                    <img src="images/hangman.png" class="card-img-top" alt="Hangman Game">
                     <div class="card-body">
-                        <p class="card-text">This is a placeholder for content I am going to develop.</p>
+                        <p> <a class="card-text" href="https://raej1428.github.io/Word_Guess_Game/"> Word Guessing
+                                Game</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
                     <img src="images/RPG-Maker-MV.jpg" class="card-img-top" alt="Role Player Maker Game">
                     <div class="card-body">
@@ -68,12 +60,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
+
+
+            <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
                     <img src="images/roshambo.jpg" class="card-img-top" alt="Rock Paper Scissors Hands">
                     <div class="card-body">
@@ -81,19 +70,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/trivia.jpg" class="card-img-top" alt="Trivia Game">
+                    <img src="images/trivia.png" class="card-img-top" alt="Trivia Game">
                     <div class="card-body">
-                        <p class="card-text">This is a placeholder for content I am going to develop.</p>
+                        <p class="card-text"><a href="https://raej1428.github.io/triviaGame/">Avenue5 Trivia Game</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio Website by Rachael Gladwin</a>
+    </nav>
 </body>
-<nav class="navbar fixed-bottom navbar-light bg-light">
-    <a class="navbar-brand" href="#">Portfolio Website by Rachael Gladwin</a>
-</nav>
-
 </html>

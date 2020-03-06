@@ -1,10 +1,17 @@
 .img2 {
-    width: 325px;
-    height: 475px;
+    height: 348px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto
 }
 
 html {
     background-image: url("images/pixel-heart.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container {
+    
+
 }
