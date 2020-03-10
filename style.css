@@ -15,25 +15,53 @@ html, body {
 .aboutMe {
   background-color: rgba(220, 220, 220, 0.534);
   padding: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
   color: whitesmoke;
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-link {
+  color: whitesmoke;
+  text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
+  font-family: 'Raleway', sans-serif;
 }
 
 .footer-brand {
   color: #2e1346;
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
   text-decoration-line: underline;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
   background-color: gainsboro;
   padding: 15px;
+  padding-top: 20px;
 }
 
 #imgPadding {
   padding: 15px;
+
+}
+
+h2 {
+  color: #2e1346;
+  text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.547);
+  text-align: center;
+  font-family: 'Bellota Text', cursive;
+}
+
+.card-body {
+  font-family: 'Raleway', sans-serif;
+  color: #2e1346;
+}
+
+.form {
+  font-family: 'Raleway', sans-serif;
+  color: #2e1346;
 
 }
