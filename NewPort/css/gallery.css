@@ -1,0 +1,34 @@
+#gallery-container {
+  position: relative;
+  height: 550px;
+  width: 850px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  border: 5px #e41ae438 solid;
+  background-color: #e41ae438;
+}
+
+img.gallery-fullsize {
+  position: absolute;
+  display: none;
+  height: 450px;
+  padding: 20px;
+}
+
+div.gallery-item {
+  display: inline-block;
+}
+
+img.gallery-preview:hover ~ img.gallery-fullsize {
+  display: flex;
+  float: none;
+  margin: 0 auto;
+}
+
+img.gallery-preview {
+  width: 53px;
+  padding: 5px;
+}
+
+
