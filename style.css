@@ -6,62 +6,77 @@
   border-style: solid;
 }
 
-html, body {
-  background-image: url("images/pixel-heart.png");
+html,
+body {
+  background-image: url("NewPort/images/pixel-heart.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.aboutMe {
-  background-color: rgba(220, 220, 220, 0.534);
+#aboutMe {
+  background-color: linear-gradient(
+    rgba(220, 220, 220, 0.534),
+    rgb(243, 125, 227),
+    rgb(85, 214, 149)
+  );
   padding: 15px;
-  font-family: 'Poppins', sans-serif;
+}
+
+.aboutMe {
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  background-color: linear-gradient(
+    rgba(157, 223, 243, 0.534),
+    rgb(243, 125, 227),
+    rgb(85, 214, 149)
+  );
 }
 
 nav {
-  color: whitesmoke;
+  color: rgb(231, 193, 247);
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .nav-link {
   color: whitesmoke;
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer-brand {
   color: #2e1346;
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.247);
   text-decoration-line: underline;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
-  background-color: gainsboro;
-  padding: 15px;
-  padding-top: 20px;
+  /* background-color: gainsboro; */
+  padding: 10px;
+  padding-top: 15px;
 }
 
 #imgPadding {
   padding: 15px;
-
 }
 
+h1,
 h2 {
   color: #2e1346;
   text-shadow: 5px 5px 5px rgba(188, 143, 143, 0.547);
   text-align: center;
-  font-family: 'Bellota Text', cursive;
+  font-family: "Bellota Text", cursive;
 }
 
 .card-body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #2e1346;
 }
 
 .form {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #2e1346;
-
 }

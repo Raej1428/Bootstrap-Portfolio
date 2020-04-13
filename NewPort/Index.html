@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/gallery.css">
@@ -13,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700;800&family=Quicksand:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
     <style>
         a {
             color: #1f0429;
@@ -49,7 +50,7 @@
                     <div class="row">
                         <div class="col-sm-4">
 
-                            <div class="card bounceIn animated">
+                            <div class="card bounceIn animated" id="cOne">
                                 <div class="card-body">
                                     <h5 class="card-title">FanPagster</h5>
                                     <p class="card-text"> This is an example of jQuery, AJAX, and API calls.</p>
@@ -61,7 +62,7 @@
 
 
                         <div class="col-sm-4">
-                            <div class="card bounceInDown animated">
+                            <div class="card bounceInDown animated" id="cTwo">
                                 <div class="card-body">
                                     <h5 class="card-title">Strawberry, Pineapple, Blender</h5>
                                     <p class="card-text">Multiplayer Game. It's like Rock, Paper, Scissors, but not!
@@ -73,7 +74,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="card bounceInLeft animated">
+                            <div class="card bounceInLeft animated" id="cThree">
                                 <div class="card-body">
                                     <h5 class="card-title">Disney Hero Guess</h5>
                                     <p class="card-text">A hangman style word game for anyone familiar with Disney
@@ -88,7 +89,7 @@
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="card bounceInRight animated">
+                            <div class="card bounceInRight animated" id="cFour">
                                 <div class="card-body">
                                     <h5 class="card-title">Avenue5 Trivia</h5>
                                     <p class="card-text">Not your average trivia game Fake Captain!</p>
@@ -100,7 +101,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="card bounceInUp animated">
+                            <div class="card bounceInUp animated" id="cFive">
                                 <div class="card-body">
                                     <h5 class="card-title">Giphy Animals</h5>
                                     <p class="card-text">Hilarious gifs at the click of a button!
@@ -112,7 +113,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card bounceIn animated">
+                            <div class="card bounceIn animated" id="cOne">
                                 <div class="card-body">
                                     <h5 class="card-title">Crystal Collector</h5>
                                     <p class="card-text">Get the value of the crystals to add up and you win!</p>
@@ -125,7 +126,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-4 rollIn animated">
+                        <div class="col-sm-4 rollIn animated" id="cSeven">
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">eLearning HTML w/ Rise!</h5>
@@ -138,7 +139,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card rollIn animated">
+                            <div class="card rollIn animated" id="cSeven">
                                 <div class="card-body">
                                     <h5 class="card-title">Instructional Design Portfolio!</h5>
                                     <p class="card-text"> Click below to send a request for this folder.</p>
@@ -219,19 +220,18 @@
         </div>
         <div class="row">
             <div class="col-md-10" id="contact">
-                <form class="form" action="mailto:Rachael.gladwin@me.com">
-                    Name:<br>
-                    <input type="text" name="fullname" value="Your Name">
-                    <br>
-                    Email:<br>
-                    <input type="text" name="Email" value="Your Email">
-                    <br>
-                    Message:<br>
-                    <textarea name="message" class="col-lg-12" rows="8">
-                                        Type your message here.
-                                        </textarea>
-                    <br>
-                    <input type="submit" value="Submit">
+
+                <form class="form" id="contact-form" method="post">>
+                    <h4>Name:</h4>
+                    <input type="text" id="FullNameId" placeholder="Enter name here…" class="form-control" /><br />
+                    <h4>Phone:</h4>
+                    <input type="phone" id="PhoneId" placeholder="Enter phone number" class="form-control" /><br />
+                    <h4>Email:</h4>
+                    <input type="email" id="EmailId" placeholder="Enter email here…" class="form-control" /><br />
+                    <h4>How can I help you?</h4>
+                    <textarea id="MessageId" rows="7" placeholder="Enter your message…"
+                        class="form-control"></textarea><br />
+                    <button id="createItem" type="button" onClick="createItem()" class="btn btn-lg">Submit</button>
                 </form>
             </div>
         </div>

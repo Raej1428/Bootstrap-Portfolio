@@ -1,5 +1,5 @@
 window.onload = function () {
-  var element = $('.card');
+  var element = $('#cOne');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -8,16 +8,16 @@ window.onload = function () {
     element.toggleClass('bounceIn animated');
 
     // animation ends
-    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-     // execute the animation again
+      // execute the animation again
       $(e.target).removeClass('bounceIn animated');
 
     });
 
   });
 
-  var element = $('.card');
+  var element = $('#cTwo');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -26,16 +26,16 @@ window.onload = function () {
     element.toggleClass('bounceInDown animated');
 
     // animation ends
-    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-     // execute the animation again
+      // execute the animation again
       $(e.target).removeClass('bounceInDown animated');
 
     });
 
   });
 
-  var element = $('.card');
+  var element = $('#cThree');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -44,16 +44,16 @@ window.onload = function () {
     element.toggleClass('bounceInLeft animated');
 
     // animation ends
-    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-     // execute the animation again
+      // execute the animation again
       $(e.target).removeClass('bounceInLeft animated');
 
     });
 
   });
 
-  var element = $('.card');
+  var element = $('#cFour');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -62,16 +62,16 @@ window.onload = function () {
     element.toggleClass('bounceInRight animated');
 
     // animation ends
-    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-     // execute the animation again
+      // execute the animation again
       $(e.target).removeClass('bounceInRight animated');
 
     });
 
   });
 
-  var element = $('.card');
+  var element = $('#cFive');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -80,16 +80,16 @@ window.onload = function () {
     element.toggleClass('bounceInUp animated');
 
     // animation ends
-    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-     // execute the animation again
+      // execute the animation again
       $(e.target).removeClass('bounceInUp animated');
 
     });
 
   });
 
-  var element = $('.card');
+  var element = $('#square');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -107,7 +107,7 @@ window.onload = function () {
 
   });
 
-  var element = $('.card');
+  var element = $('#cSeven');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -115,17 +115,17 @@ window.onload = function () {
     // the animation starts
     element.toggleClass('rollIn animated');
 
-    // // animation ends
-    // element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    // animation ends
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-    //  // execute the animation again
-    //   $(e.target).removeClass('rollIn animated');
+      // execute the animation again
+      $(e.target).removeClass('rollIn animated');
 
-    // });
+    });
 
   });
 
-  var element = $('.card');
+  var element = $('#square');
 
   // when mouseover execute the animation
   element.mouseover(function () {
@@ -133,13 +133,13 @@ window.onload = function () {
     // the animation starts
     element.toggleClass('rollOut animated');
 
-    // // animation ends
-    // element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+    // animation ends
+    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
-    //  // execute the animation again
-    //   $(e.target).removeClass('rollOut animated');
+      // execute the animation again
+      $(e.target).removeClass('rollOut animated');
 
-    // });
+    });
 
   });
 }
