@@ -2,7 +2,7 @@
 
 Objective: Learn Bootstrap CSS technology through building a portfolio website with the content layout options and the basic components that make up a neat website design.
 
-Goals;
+Goals:
 
 - Create navigation section.
 - Create jumbotron header.
